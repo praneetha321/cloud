@@ -34,7 +34,14 @@
                     "max": 20
                 }
             },
-            "auth": "xsuaa"
+            "auth": {
+                "[production]": {
+                    "strategy": "JWT"
+                },
+                "[test]": {
+                    "strategy": "mock"
+                }
+            }
         }
     },
     "sapux": [
